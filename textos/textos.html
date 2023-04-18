@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Escolha seu estilo de texto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VCR+OSD+Mono">
+    <style>
+      body {
+        background-color: #dcc1a7;
+        font-family: 'VCR OSD Mono', monospace;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #56423e;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 48px;
+      }
+
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        background-color: #56423e;
+        color: white;
+		font-family: 'VCR OSD Mono', monospace;
+        font-size: 48px;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px;
+      }
+
+      button:hover {
+        background-color: white;
+        color: #56423e;
+      }
+
+      footer {
+        background-image: ("/img/trans-flag.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #56423e;
+        color: white;
+        padding: 10px;
+        margin-top: auto;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      @media only screen and (max-width: 600px) {
+        nav a {
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Escolha a categoria de texto</h1>
+    </header>
+    <main>
+       <button onclick="location.href='receitas/receitas.html'">Receitas</button>
+      <button>Autorais</button>
+    </main>
+    <footer>
+      <p>© 2023 Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
