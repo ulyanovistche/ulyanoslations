@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gato Agnaldo</title>
+	<style>
+		img {
+			display: block;
+			margin: auto;
+			width: 30%;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" src="agnaldo.mp3" autoplay></audio>
+	<script>
+		var audio = document.getElementById("audio");
+		function playAudio() { 
+			audio.play(); 
+		} 
+	</script>
+	<img src="Agnaldo.jpg" alt="Gato Agnaldo" onclick="playAudio()">
+	<center>
+	<p style="font-size: 24px;">Esse é o gato Agnaldo. Alise o pelo dele.</p>
+	</center>
+</body>
+</html>
